@@ -1,5 +1,6 @@
 import Header from './components/Header'
 import Content from './components/Content'
+import Total from './components/Total'
 
 function App() {
   const course = 'Half Stack application development'
@@ -10,7 +11,6 @@ function App() {
     exercises2: 7,
     part3: 'State of a component',
     exercises3: 13
-
   }
   
 
@@ -18,8 +18,7 @@ function App() {
    <div>
     <Header course={course}/>
     <Content content={content} />
-    
-    {/* <p>Number of exercises {exercises1 + exercises2 + exercises3}</p> */}
+    <Total content={content}/>
    </div>
   )
 }
