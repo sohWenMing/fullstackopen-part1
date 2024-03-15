@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Part(props) {
+function Part({part}) {
 
     return(
-    <p>{props.info.name} {props.info.exercises}</p>
+    <p>{part.name} {part.exercises}</p>
     )
 }
 

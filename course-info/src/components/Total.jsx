@@ -1,14 +1,11 @@
 import React from 'react';
 
-function Total(props) {
-    let total = 0;
-    props.parts.forEach((item) => {
-        total = total + item.exercises
-    })
+function Total({total}) {
+
 
     return (
         <>
-        <p>Number of exercises: {total}</p>
+        <p><b>Number of exercises: {total}</b></p>
         </>
     )
 
